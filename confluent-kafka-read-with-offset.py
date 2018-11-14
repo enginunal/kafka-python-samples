@@ -52,9 +52,6 @@ if __name__ == "__main__":
     # Subscribe to topics
     consumer.subscribe(topics, on_assign=my_on_assign)
 
-    #p = TopicPartition(topicStats, 0, myOffset)
-    #consumer.seek(p)
-
     # Read messages from Kafka, print to stdout
     try:
         msgs = consumer.consume(num_messages=messageCount, timeout=10)
