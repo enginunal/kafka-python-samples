@@ -1,7 +1,5 @@
-from confluent_kafka import Consumer, Producer, KafkaError, KafkaException
-from datetime import datetime
+from confluent_kafka import Consumer, KafkaError, KafkaException
 import sys
-import json
 
 broker = '10.16.25.74:9092'
 group = 'grpdeneme'
